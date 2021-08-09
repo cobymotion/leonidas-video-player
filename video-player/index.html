@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="./css/styles.css">
+	<title>Video Player</title>
+</head>
+<body>
+	<h1>Hola mundo</h1>
+	<button class="button" id="forward"></button>
+	<button class="button" id="backward"></button>
+	<button class="button" id="play"></button>
+	<button class="button" hidden id="pause"></button>		
+	<button>Avanzar 10 segundos</button>	
+	<video id="video" poster="./images/poster.jpg" muted controls src="./videos/lofi.mp4" width="400"></video>
+
+	<script type="text/javascript">
+		const video = document.querySelector('#video'); 
+		const playButton = document.querySelector('#play'); 
+		const pauseButton = document.querySelector('#pause');
+
+		playButton.addEventListener('click', handlePlay);
+		pauseButton.addEventListener('click', handlePause);
+
+		function handlePlay(){
+			console.log("Se hizo el play")
+			video.play();
+			playButton.hidden =true 
+			pauseButton.hidden = false 
+		}
+
+		function handlePause(){
+			console.log("Se hizo el pause")
+			video.pause();
+			playButton.hidden =false 
+			pauseButton.hidden = true 
+		}
+
+	</script>
+</body>
+</html>
