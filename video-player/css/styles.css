@@ -18,7 +18,7 @@ body {
 
 .player video {
 	inline-size: 100%;	
-	aspect-ratio:  16/9;
+	aspect-ratio: 16 / 9;
 	vertical-align: middle;
 }
 
@@ -35,6 +35,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	gap: 20px;
 }
 
 .player-progress{	
