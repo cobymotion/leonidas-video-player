@@ -44,7 +44,7 @@ function handleLoadedVideo(){
 }
 
 function handleTimeUpdate(){
-	progreso.value = video.currentTime; 
+	progreso.value = video.currentTime; 	
 }
 
 function handleInput(){
